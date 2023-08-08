@@ -1,0 +1,352 @@
+body{
+  margin: 0;
+}
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 0px;
+}
+
+
+.ant-anchor-ink-visible{
+  display:none !important
+}
+.ant-layout-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #ffffff;
+  margin-top: 0 !important;
+  padding: 0;
+  height: auto;
+}
+
+.ant-anchor-link > a {
+  padding: 8px 4px;
+}
+.ant-anchor::before
+{
+  position:unset !important
+}
+.titleHolder:after {
+  transform: translateX(-50%);
+  content: '';
+  background: #1890ff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 50px;
+}
+/* .header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 0;
+}
+.header .logo {
+  font-size: 22px;
+  font-weight: 500;
+  padding-left: 50px;
+}
+.header .logo a {
+  color: #353535;
+}
+.header .logo .fas {
+  color: #1890ff;
+  margin: 0 5 0 0;
+  font-size: 28px;
+}
+.header .ant-anchor {
+  display: flex;
+  text-align: center;
+  padding: 8px 4px;
+}
+
+.header .ant-anchor-link {
+  line-height: 1.4;
+  position: relative;
+  padding-inline: 0 !important;
+  margin: 5px 10px;
+  text-decoration: none;
+}
+
+.header .ant-anchor-link:before,
+.header .ant-anchor-link:after {
+  content: '';
+  background: #1890ff;
+  width: 1px;
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 20%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+ .header .ant-anchor-link:after {
+  left: auto;
+  right: 20%;
+} 
+
+ .header .ant-anchor-link.ant-anchor-link-active:before,
+.header .ant-anchor-link:hover:before {
+  left: 0%;
+  opacity: 1;
+} 
+
+.header .ant-anchor-link.ant-anchor-link-active:after,
+.header .ant-anchor-link:hover:after {
+  right: 0%;
+  opacity: 1;
+}
+/* .heroBlock */
+.heroBlock {
+  background: url('./images/bg-hero.jpg') no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  height: 650px;
+  display: block !important;
+}
+.heroBlock .content {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 20px 70px 70px;
+  height: 100%;
+  
+}
+.heroBlock .content>p {
+  font-size: 13px;
+  margin: 0 0 30px;
+}
+.heroBlock .content>h3 {
+  font-size: 25px;
+}
+
+.heroBlock .ant-carousel,
+.heroBlock .ant-carousel div {
+  height: 100%;
+}
+
+.heroBlock .btnHolder {
+  height: auto !important;
+}
+
+.heroBlock .btnHolder button,
+.heroBlock .btnHolder .fas {
+  margin: 0 10px 0 0;
+}
+.heroBlock .slick-dots li button {
+  background: #101010 !important;
+}
+
+.heroBlock .slick-dots li.slick-active button {
+  background: #1890ff !important;
+}
+/* .aboutBlock */
+.aboutBlock{
+  padding: 40px 100px 50px 100px;
+  border-bottom: #e6e5e5 2px solid;
+
+}
+.aboutBlock .contentHolder > p {
+  text-align: center;
+  font-size: 13px;
+}
+.aboutBlock .contentHolder {
+  text-align: center;
+  margin: 0 0 70px;
+}
+.aboutBlock .icon {
+  font-size: 40px;
+  color: #1890ff;
+  margin: 0 0 10px;
+}
+.aboutBlock .content {
+  text-align: center;
+}
+
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 20px;
+  margin: 20px 0 40px;
+}
+.titleHolder > h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.titleHolder:after {
+  transform: translateX(-50%);
+  content: '';
+  background: #1890ff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 50px;
+}
+
+.content > p {
+  font-size: 13px;
+}
+/* container-feature */
+.container-feature{
+  padding: 20px 60px 20px 100px;
+  display: block;
+}
+.featureBlock{
+  margin: 25px;
+  display: block;
+}
+/* .worksBlock */
+
+.worksBlock {
+  background: url('./images/bg-works.jpg') no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+  height: 400px;
+  padding-top: 50px;
+}
+.worksBlock:before {
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.worksBlock h2 {
+  color: #fff;
+}
+.worksBlock .contentHolder {
+  text-align: center;
+}
+
+.worksBlock .contentHolder button {
+  font-size: 40px;
+  line-height: 1;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+}
+
+.ant-collapse-content-box   >p {
+  font-size: 12px;
+}
+/* .container-faq */
+.container-faq{
+  padding: 30px 140px 30px 140px;
+}
+.faqBlock .ant-collapse {
+  margin: 0 0 40px;
+}
+.faqFoot{
+ text-align: center;
+}
+
+/* pricingBlock */
+.pricingBlock {
+  padding: 30px 140px 50px 140px;
+  border-top: 1px solid rgb(188, 188, 188);
+  border-bottom: 1px solid rgb(188, 188, 188);
+  margin: 0
+}
+.pricingBlock .ant-list {
+  text-align: center;
+}
+.pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+  box-shadow: 0 0 15px 2px #f3f3f3;
+  transform: scale(1.1);
+  position: relative;
+  z-index: 1;
+}
+.pricingBlock .ant-card-head-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+}
+.pricingBlock .large {
+  font-size: 38px;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+
+.contactBlock{
+  padding: 30px 240px 50px 240px;
+}
+.login-form-button{
+  margin-top: 10px;
+}
+.ant-form textarea {
+  height: 100px;
+  width: 720px;
+}
+/* footerBlock */
+.footerBlock{
+  text-align: center;
+}
+.socials > ul > li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.footer .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  height: 50px;
+}
+
+.ant-layout-footer {
+  background: #111 !important;
+  color: #fff !important;
+  padding: 30px 0 !important;
+  text-align: center;
+}
+
+
+.footer .fas {
+  color: #1890ff;
+  font-size: 28px;
+  margin: 0 5px 0 0;
+}
+.footer .logo a {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.socials > ul  {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+}
+.footer .socials a {
+  color: #fff;
+}
+.footer .socials a:hover {
+  color: #1890ff;
+}
+.footer > p {
+  margin-top: 0;
+}
+.mobileHidden {
+  display: block;
+}
