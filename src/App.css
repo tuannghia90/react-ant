@@ -6,8 +6,6 @@ body{
   max-width: 1200px;
   padding: 0 0px;
 }
-
-
 .ant-anchor-ink-visible{
   display:none !important
 }
@@ -294,7 +292,7 @@ body{
 }
 .ant-form textarea {
   height: 100px;
-  width: 720px;
+  width: 730px;
 }
 /* footerBlock */
 .footerBlock{
