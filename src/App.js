@@ -1,10 +1,7 @@
-
-import { Button, Space } from 'antd';
 import "./App.css"
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { useState, useCallback } from 'react';
 import AppHeader from './component/header.js';
-import AppHome from './component/home.js';
+import AppHome from './component/home';
 import { Footer } from 'antd/es/layout/layout';
 import AppFooter from './component/footer';
 const { Header,Content} = Layout;
